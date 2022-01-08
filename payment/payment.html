@@ -2,118 +2,134 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <title>Payment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>Payment</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-sm  bg-dark navbar-dark">
-      <div class="container-fluid">
-
-        <ul class="navbar-nav">
-          <li class="navbar-item mt-1">
-            <a class="navbar-brand" href="#">Navbar</a>
-          </li>
-          <li class="navbar-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="navbar-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-            <ul class="dropdown-menu bg-secondary">
-              <li><a class="dropdown-item text-white" href="#">First Link</a></li>
-              <li><a class="dropdown-item text-white" href="#">Second Link</a></li>
-              <li><a class="dropdown-item text-white" href="#">Third Link</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-2" action="submit">
-          <input class="form-control me-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success" type="button">Search</button>
-        </form>
-      </div>
-    </nav>
-
-  </header>
- 
-  <div class="container-sm p-2">
-    <div class="row " >
-      <h1>Payment</h1>
-      <div class="col-sm-6 p-4 ms-3 border rounded border-bottom-0" >
-        <h3>Payment details</h3>
-
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">Bill number: </span>
-          <input type="text" class="form-control" id="billno" value="BILL12009">
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">Patient id: </span>
-          <input type="text" class="form-control" id="patientid" value="Trial id">
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">Patient name: </span>
-          <input type="text" class="form-control" id="patientname" value="Trial name">
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">gender: </span>
-          <input type="text" class="form-control" id="gender" value="M/F/T">
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">Age: </span>
-          <input type="text" class="form-control" id="age" value="32">
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">Patient phone: </span>
-          <input type="text" class="form-control" id="phone" value="xxxxxxxxxx">
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">Doctor name: </span>
-          <input type="text" class="form-control" id="doctorname" value="Dr.Trial name">
-        </div>
-        </div>
-
-        <div class="col align-self-end m-5  ">
-          <h3>Payment mode</h3>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-              checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Cash
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-              checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Card
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-              checked>
-            <label class="form-check-label" for="exampleRadios1">
-              UPI/Net Banking
-            </label>
-          </div>
-          <div class="row my-5 p-5">
-            <div class="col align-self-end">
-              <a href="#" class="btn btn-outline-warning btn-lg m-2" role="button" aria-pressed="true">Cancel</a>
-              <a href="#" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Bill&Generate Token</a>
+    <header>
+        <nav class="navbar navbar-expand-sm  bg-dark navbar-dark">
+            <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><h3>Reception</h3></a>
+                <form class="d-flex mt-2" action="submit">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success" type="button">Search</button>
+                </form>
             </div>
-          </div>
+        </nav>
+
+    </header>
+
+    <div class="container-fluid-sm d-flex align-items-stretch">
+
+        <div class="float-start bg-light navbar-light p-1">
+
+            <ul class="navbar-nav ms-2 gap-3">
+                <li class="navbar-item ">
+                    <a class="navbar-brand" href="#"><i class="bi bi-house-fill" style="font-size: 1.5rem;"></i></a>
+                </li>
+
+                <li class="navbar-item">
+                    <a class="nav-link active" href="#"><i class="bi bi-house" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#"><i class="bi bi-plus-circle" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#"><i class="bi bi-plus-circle-fill" style="font-size: 1.5rem;"></i></a>
+                </li>
+
+                <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i
+                            class="bi bi-person-circle" style="font-size: 1.5rem;"></i></a>
+                    <ul class="dropdown-menu bg-secondary">
+                        <li><a class="dropdown-item text-white" href="#">First Link</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Second Link</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Third Link</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-      </div>
+
+        
+
+
+
+    <div class="container-sm p-2">
+
+        <div class="row">
+            <h1>Payment</h1>
+            <div class="col-sm-6 p-4 ms-3 border rounded border-bottom-0">
+                <h3>Payment details</h3>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Bill number: </span>
+                    <input type="text" class="form-control" id="billno" value="BILL12009">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Patient id: </span>
+                    <input type="text" class="form-control" id="patientid" value="Trial id">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Patient name: </span>
+                    <input type="text" class="form-control" id="patientname" value="Trial name">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">gender: </span>
+                    <input type="text" class="form-control" id="gender" value="M/F/T">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Age: </span>
+                    <input type="text" class="form-control" id="age" value="32">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Patient phone: </span>
+                    <input type="text" class="form-control" id="phone" value="xxxxxxxxxx">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Doctor name: </span>
+                    <input type="text" class="form-control" id="doctorname" value="Dr.Trial name">
+                </div>
+            </div>
+
+            <div class="col align-self-end m-5  ">
+                <h3>Payment mode</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Cash
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Card
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        UPI/Net Banking
+                    </label>
+                </div>
+                <div class="row my-5 p-5">
+                    <div class="col align-self-end">
+                        <a href="#" class="btn btn-outline-warning btn-lg m-2" role="button"
+                            aria-pressed="true">Cancel</a>
+                        <a href="#" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Bill&Generate
+                            Token</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </div>
