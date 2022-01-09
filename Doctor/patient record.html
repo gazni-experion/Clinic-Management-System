@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm  bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm  bg-dark navbar-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <h3>Reception</h3>
@@ -26,10 +26,10 @@
     </nav>
 
   </header>
+<div class="d-flex align-items-start">
+  <div class="container-fluid-sm position-fixed mt-5">
 
-  <div class="container-fluid-sm d-flex align-items-stretch">
-
-    <div class="float-start bg-light navbar-light p-1">
+    <nav class="bg-light navbar-light p-1 mt-3" style="min-width: fit-content;min-height: 100vh;">
 
       <ul class="navbar-nav ms-2 gap-3">
         <li class="navbar-item ">
@@ -56,145 +56,148 @@
           </ul>
         </li>
       </ul>
-    </div>
-    
+    </nav>
+  </div>
+</div>
+
+<div class="vr"></div>
 
 
 
 
-
-    <div class="container-sm m-2">
-      <div class="row">
-        <div class="col p-4" style="max-width: fit-content;">
-          <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="patientId">Patient ID: </span>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm" value="patientID" disabled>
-          </div>
-          <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="patientId">Patient Name: </span>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm" value="patient name" disabled>
-          </div>
-          <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="patientId">Gender: </span>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm" value="patient gender" disabled>
-          </div>
-          <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="patientId">Age: </span>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm" value="patient age" disabled>
-          </div>
-          <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="patientId">Phone: </span>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm" value="patient phone" disabled>
-          </div>
-          <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="patientId">Last visited: </span>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm" value="last visited date" disabled>
-          </div>
+  <div class="container-sm" >
+    <div class="row mt-5">
+      <div class="col p-4" style="max-width: fit-content;">
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text" id="patientId">Patient ID: </span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" value="patientID" disabled>
         </div>
-      
-
-
-
-
-
-    
-
-    <div class="col p-3" style="margin-left: 10em;max-width: max-content;">
-      <div class="row">
-        <h3>Vitals</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">No.</th>
-              <th scope="col">Vital</th>
-              <th scope="col">Observed value</th>
-              <th scope="col">Unit</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td><select class="form-select" aria-label="Vital select">
-                  <option selected>Select Vital</option>
-                  <option value="1">Breath Rate</option>
-                  <option value="2">Breath Rate</option>
-                  <option value="3">Body Temperature</option>
-                  <option value="4">Blood Pressure</option>
-                </select></td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><select class="form-select" aria-label="Vital select">
-                  <option selected>Select Vital</option>
-                  <option value="1">Breath Rate</option>
-                  <option value="2">Breath Rate</option>
-                  <option value="3">Body Temperature</option>
-                  <option value="4">Blood Pressure</option>
-                </select></td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td><select class="form-select" aria-label="Vital select">
-                  <option selected>Select Vital</option>
-                  <option value="1">Breath Rate</option>
-                  <option value="2">Breath Rate</option>
-                  <option value="3">Body Temperature</option>
-                  <option value="4">Blood Pressure</option>
-                </select></td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td><select class="form-select" aria-label="Vital select">
-                  <option selected>Select Vital</option>
-                  <option value="1">Breath Rate</option>
-                  <option value="2">Breath Rate</option>
-                  <option value="3">Body Temperature</option>
-                  <option value="4">Blood Pressure</option>
-                </select></td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text" id="patientId">Patient Name: </span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" value="patient name" disabled>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text" id="patientId">Gender: </span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" value="patient gender" disabled>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text" id="patientId">Age: </span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" value="patient age" disabled>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text" id="patientId">Phone: </span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" value="patient phone" disabled>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text" id="patientId">Last visited: </span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" value="last visited date" disabled>
+        </div>
       </div>
 
-    </div>
+
+
+
+
+
+
+
+      <div class="col p-3" style="margin-left: 10em;max-width: max-content;">
+        <div class="row">
+          <h3>Vitals</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Vital</th>
+                <th scope="col">Observed value</th>
+                <th scope="col">Unit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><select class="form-select" aria-label="Vital select">
+                    <option selected>Select Vital</option>
+                    <option value="1">Breath Rate</option>
+                    <option value="2">Breath Rate</option>
+                    <option value="3">Body Temperature</option>
+                    <option value="4">Blood Pressure</option>
+                  </select></td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><select class="form-select" aria-label="Vital select">
+                    <option selected>Select Vital</option>
+                    <option value="1">Breath Rate</option>
+                    <option value="2">Breath Rate</option>
+                    <option value="3">Body Temperature</option>
+                    <option value="4">Blood Pressure</option>
+                  </select></td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><select class="form-select" aria-label="Vital select">
+                    <option selected>Select Vital</option>
+                    <option value="1">Breath Rate</option>
+                    <option value="2">Breath Rate</option>
+                    <option value="3">Body Temperature</option>
+                    <option value="4">Blood Pressure</option>
+                  </select></td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><select class="form-select" aria-label="Vital select">
+                    <option selected>Select Vital</option>
+                    <option value="1">Breath Rate</option>
+                    <option value="2">Breath Rate</option>
+                    <option value="3">Body Temperature</option>
+                    <option value="4">Blood Pressure</option>
+                  </select></td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
     </div>
 
 
-  <div class="row">
-    <div class="col">
-      <h3>DIAGNOSIS</h3>
+    <div class="row">
       <div class="col">
+        <h3>DIAGNOSIS</h3>
+        <div class="col">
 
-        <form>
-          <div class="form-outline mb-4">
-            <label class="form-label" for="description">Disease & Description</label>
-            <textarea class="form-control" id="description" rows="4"
-              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat tortor ex, sed pellentesque odio tristique in. Nulla id sodales velit. Maecenas auctor purus accumsan venenatis semper. In hac habitasse. "></textarea>
-          </div>
-          <div class="float-end"><button type="submit" class="btn btn-outline-danger">
-              Clear
-            </button>
-            <button type="submit" class="btn btn-primary">
-              Save
-            </button>
-          </div>
-        </form>
+          <form>
+            <div class="form-outline mb-4">
+              <label class="form-label" for="description">Disease & Description</label>
+              <textarea class="form-control" id="description" rows="4"
+                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat tortor ex, sed pellentesque odio tristique in. Nulla id sodales velit. Maecenas auctor purus accumsan venenatis semper. In hac habitasse. "></textarea>
+            </div>
+            <div class="float-end"><button type="submit" class="btn btn-outline-danger">
+                Clear
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Save
+              </button>
+            </div>
+          </form>
 
 
+        </div>
       </div>
     </div>
 
@@ -266,8 +269,6 @@
       </table>
     </div>
   </div>
-  </div>
-
 
 </body>
 
