@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Appointment</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Doctor appointment page">
+    <meta name="author" content="Binitha">
+    <title>Doctor Appointment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="doctor_appointment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -15,9 +19,7 @@
             <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item active mt-1  ">
-                        <a class="navbar-brand " href="#">Appointments</a>
-                    </li>
-
+                        <a class="navbar-brand " href="#">Appointment</a>
                     </li>
                 </ul>
                 <form class="d-flex ml-2 ">
@@ -27,119 +29,136 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid bg-light bg-opacity-10  float-start">
-        <div class="row -sm-9">
-            <div class="col-sm-1 ">
-                <div class="float-start bg-light navbar-light p-1  ">
 
-                    <ul class="navbar-nav ms-2 ">
-                        <li class="navbar-item ">
-                            <a class="navbar-brand" href="#"><i class="bi bi-house-fill"
-                                    style="font-size: 1.5rem;"></i></a>
-                        </li>
-
-                        <li class="navbar-item">
-                            <a class="nav-link active" href="#"><i class="bi bi-house"
-                                    style="font-size: 1.5rem;"></i></a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="#"><i class="bi bi-plus-circle"
-                                    style="font-size: 1.5rem;"></i></a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="#"><i class="bi bi-plus-circle-fill"
-                                    style="font-size: 1.5rem;"></i></a>
-                        </li>
-
-                        <li class="nav-item dropup">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i
-                                    class="bi bi-person-circle" style="font-size: 1.5rem;"></i></a>
-                            <ul class="dropdown-menu bg-secondary">
-                                <li><a class="dropdown-item text-white" href="#">First Link</a></li>
-                                <li><a class="dropdown-item text-white" href="#">Second Link</a></li>
-                                <li><a class="dropdown-item text-white" href="#">Third Link</a></li>
-                            </ul>
-                        </li>
-
+    <div class="container-fluid-sm d-flex align-items-stretch">
+        <div class="float-start bg-light navbar-light p-1">
+            <ul class="navbar-nav ms-2 gap-3">
+                <li class="navbar-item ">
+                    <a class="navbar-brand" href="#"><i class="bi bi-house-fill" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link active" href="#"><i class="bi bi-house" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#"><i class="bi bi-plus-circle" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#"><i class="bi bi-plus-circle-fill" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i
+                            class="bi bi-person-circle" style="font-size: 1.5rem;"></i></a>
+                    <ul class="dropdown-menu bg-secondary">
+                        <li><a class="dropdown-item text-white" href="#">First Link</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Second Link</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Third Link</a></li>
                     </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid bg-light bg-opacity-10 float-right">
+            <div class="row">
+                <div class="text-center col-sm-2 mt-5 pt-5">
+                    <h3>TOKEN<br>NO</h3>
+                    <h1 id="tokenNoId"><b>1</b></h1>
+                </div>
+                <div class="col-sm-10 mt-4">
+                    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                        <table class="table bg-white border table-sm text-center">
+                            <br>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Token Number</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Age</th>
+                                    <th scope="col ">Last Visited</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>                                   
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>                              
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>                                   
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>                                   
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>
+                                </tr>
+                                <tr>
+                                    <td>Patient_token</td>
+                                    <td>Patient_Name</td>
+                                    <td>Patient_gender</td>
+                                    <td>Patient_age</td>
+                                    <td>Last_visit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="text-center col-sm-2 mt-5 me-2 ms-2">
-                <br><br>
-                <h3>TOKEN NO</h3>
-                <h3>NO</h3>
-            </div>
-            <div class="col-sm-8 mt-3 ">
-
-
-                <table class="table bg-white border table-sm text-center">
-                    <br>
-
-
-                    <tr>
-                        <th scope="col">Token No</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Gender</th>
-                        <th scope="col">Last Visited</th>
-
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Patient_token</td>
-                            <td>Patient_Name</td>
-                            <td>Patient_gender</td>
-                            <td>last_visited</td>
-
-                        </tr>
-                        <tr>
-                            <td>Patient_token</td>
-                            <td>Patient_Name</td>
-                            <td>Patient_gender</td>
-                            <td>last_visited</td>
-                        </tr>
-                        <tr>
-                            <td>Patient_token</td>
-                            <td>Patient_Name</td>
-                            <td>Patient_gender</td>
-                            <td>last_visited</td>
-                        </tr>
-                        <tr>
-                            <td>Patient_token</td>
-                            <td>Patient_Name</td>
-                            <td>Patient_gender</td>
-                            <td>last_visited</td>
-                        </tr>
-                        <tr>
-                            <td>Patient_token</td>
-                            <td>Patient_Name</td>
-                            <td>Patient_gender</td>
-                            <td>last_visited</td>
-                        </tr>
-                        <tr>
-                            <td>Patient_token</td>
-                            <td>Patient_Name</td>
-                            <td>Patient_gender</td>
-                            <td>last_visited</td>
-                        </tr>
-                        <tr>
-                            <td>Patient_token</td>
-                            <td>Patient_Name</td>
-                            <td>Patient_gender</td>
-                            <td>last_visited</td>
-                        </tr>
-                        <tr>
-                            <td>Patient_token</td>
-                            <td>Patient_Name</td>
-                            <td>Patient_gender</td>
-                            <td>last_visited</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
-        <br>
-    </div>
 </body>
 
 </html>
